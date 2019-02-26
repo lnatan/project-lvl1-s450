@@ -1,1 +1,1 @@
-Brain Games. Hexlet Porject N1.
+Brain Games. Hexlet Project N1.
