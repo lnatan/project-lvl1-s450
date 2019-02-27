@@ -7,7 +7,7 @@ const name = readlineSync.question('May I have your name? ');
 console.log(`Hi, ${name}!\n`);
 
 // game part
-const rightAnswersCount = 3;
+const roundsCount = 3;
 let counter = 0;
 
 const brainEven = () => {
@@ -22,9 +22,10 @@ const brainEven = () => {
     counter += 1;
   } else {
     console.log(`'${answer}' is wrong answer ;(. Correct answer was '${expected}'.\n Let's try again, ${name}!\n`);
+    return;
   }
 
-  if (rightAnswersCount === counter) {
+  if (roundsCount === counter) {
     console.log(`Congratulations, ${name}!`);
     return;
   }
