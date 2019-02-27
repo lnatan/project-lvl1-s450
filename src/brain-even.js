@@ -1,36 +1,18 @@
 import readlineSync from 'readline-sync';
+import runGame from '.';
 
-// welcome part
-console.log('Welcome to the Brain Games!');
-console.log('Answer "yes" if number even otherwise answer "no"\n');
-const name = readlineSync.question('May I have your name? ');
-console.log(`Hi, ${name}!\n`);
-
-// game part
-const roundsCount = 3;
-let counter = 0;
+const isEven = num => num % 2 === 0;
+const task = 'Answer "yes" if number even otherwise answer "no"\n';
 
 const brainEven = () => {
   const number = Math.floor(Math.random() * 100);
-  const expected = number % 2 === 0 ? 'yes' : 'no';
+  const question = String(number);
+  const expected = isEven(number) ? 'yes' : 'no';
 
-  console.log(`Question: ${number}`);
+  console.log(`Question: ${question}`);
   const answer = readlineSync.question('Your answer: ');
 
-  if (answer === expected) {
-    console.log('Correct!\n');
-    counter += 1;
-  } else {
-    console.log(`'${answer}' is wrong answer ;(. Correct answer was '${expected}'.\n Let's try again, ${name}!\n`);
-    return;
-  }
-
-  if (roundsCount === counter) {
-    console.log(`Congratulations, ${name}!`);
-    return;
-  }
-
-  brainEven();
+  return { answer, expected };
 };
 
-export default brainEven;
+export default () => runGame(task, brainEven);
