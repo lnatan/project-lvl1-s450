@@ -1,8 +1,8 @@
 import readlineSync from 'readline-sync';
-import runGame from '.';
+import runGame from '..';
 
 const isEven = num => num % 2 === 0;
-const task = 'Answer "yes" if number even otherwise answer "no"\n';
+const task = 'Answer "yes" if number even otherwise answer "no"';
 
 const brainEven = () => {
   const number = Math.floor(Math.random() * 100);

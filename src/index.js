@@ -5,7 +5,7 @@ let counter = 0;
 
 const runGame = (task, game) => {
   console.log('Welcome to the Brain Games!');
-  console.log(task);
+  console.log(`${task}\n`);
 
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hi, ${name}!\n`);
