@@ -6,10 +6,13 @@ Hexlet Project N1.
 [![Build Status](https://travis-ci.com/soixiio/project-lvl1-s450.svg?branch=master)](https://travis-ci.com/soixiio/project-lvl1-s450)
 
 
-* How to install and run game-even:
+### How to install and run:
 
+* brain-even
 [![asciicast](https://asciinema.org/a/UHJqVlgwibzUiVqDPUDxm1qKR.svg)](https://asciinema.org/a/UHJqVlgwibzUiVqDPUDxm1qKR)
 
-* How to install and run game-calc:
-
+* brain-calc:
 [![asciicast](https://asciinema.org/a/QLbKYUtbb9a4fqAEtXOAbTBNk.svg)](https://asciinema.org/a/QLbKYUtbb9a4fqAEtXOAbTBNk)
+
+* brain-gcd:
+[![asciicast](https://asciinema.org/a/eDu0smbrgIFaM2GCelios3LBP.svg)](https://asciinema.org/a/eDu0smbrgIFaM2GCelios3LBP)
