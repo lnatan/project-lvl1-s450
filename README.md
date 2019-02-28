@@ -9,3 +9,7 @@ Hexlet Project N1.
 * How to install and run game-even:
 
 [![asciicast](https://asciinema.org/a/UHJqVlgwibzUiVqDPUDxm1qKR.svg)](https://asciinema.org/a/UHJqVlgwibzUiVqDPUDxm1qKR)
+
+* How to install and run game-calc:
+
+[![asciicast](https://asciinema.org/a/QLbKYUtbb9a4fqAEtXOAbTBNk.svg)](https://asciinema.org/a/QLbKYUtbb9a4fqAEtXOAbTBNk)
