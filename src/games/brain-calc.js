@@ -1,4 +1,3 @@
-import readlineSync from 'readline-sync';
 import randomNumFrom from '../utils';
 import runGame from '..';
 
@@ -18,10 +17,7 @@ const brainCalc = () => {
   const question = `${number1} ${operator} ${number2}`;
   const expected = String(operationFn(number1, number2));
 
-  console.log(`Question: ${question}`);
-  const answer = readlineSync.question('Your answer: ');
-
-  return { answer, expected };
+  return { question, expected };
 };
 
 export default () => runGame(task, brainCalc);
