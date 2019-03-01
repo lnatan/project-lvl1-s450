@@ -1,7 +1,6 @@
 import readlineSync from 'readline-sync';
+import randomNumFrom from '../utils';
 import runGame from '..';
-
-const randomNum = max => Math.floor(Math.random() * max);
 
 const operations = [
   ['+', (a, b) => a + b],
@@ -10,12 +9,11 @@ const operations = [
 ];
 
 const task = 'What is the result of the expression?';
-const maxNum = 100;
 
 const brainCalc = () => {
-  const number1 = randomNum(maxNum);
-  const number2 = randomNum(maxNum);
-  const [operator, operationFn] = operations[randomNum(operations.length)];
+  const number1 = randomNumFrom(0, 100);
+  const number2 = randomNumFrom(0, 100);
+  const [operator, operationFn] = operations[randomNumFrom(0, operations.length - 1)];
 
   const question = `${number1} ${operator} ${number2}`;
   const expected = String(operationFn(number1, number2));

@@ -1,7 +1,6 @@
 import readlineSync from 'readline-sync';
+import randomNumFrom from '../utils';
 import runGame from '..';
-
-const randomNum = max => Math.floor(Math.random() * max);
 
 const findGcd = (a, b) => {
   if (b === 0) {
@@ -11,11 +10,10 @@ const findGcd = (a, b) => {
 };
 
 const task = 'Find the greatest common divisor of given numbers.';
-const maxNum = 100;
 
 const brainGcd = () => {
-  const number1 = randomNum(maxNum);
-  const number2 = randomNum(maxNum);
+  const number1 = randomNumFrom(0, 100);
+  const number2 = randomNumFrom(0, 100);
 
   const question = `${number1} ${number2}`;
   const expected = String(findGcd(number1, number2));
