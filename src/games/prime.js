@@ -2,8 +2,11 @@ import randomNumFrom from '../utils';
 import runGame from '..';
 
 const isPrime = (num) => {
-  if (num === 0 || num === 1) {
+  if (num <= 1) {
     return false;
+  }
+  if (num === 2) {
+    return true;
   }
   const iter = (divider) => {
     if (num % divider === 0) {
