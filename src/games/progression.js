@@ -16,7 +16,8 @@ const task = 'What number is missing in the progression?';
 const brainProgression = () => {
   const start = randomNumFrom(0, 100);
   const step = randomNumFrom(1, 20);
-  const progression = makeProgression(start, step, 10);
+  const length = 10;
+  const progression = makeProgression(start, step, length);
 
   const hiddenNumIndex = randomNumFrom(0, progression.length - 1);
 
